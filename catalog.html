@@ -24,12 +24,12 @@
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search">
               <span class="visually-hidden">
                 <a class="navigation-link" href="#">Поиск</a>
               </span>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search-favorite">
               <span class="visually-hidden">
                 <a class="navigation-link" href="#">Избранное</a>
               </span>
@@ -41,76 +41,78 @@
         </nav>
       </header>
       <main class="main-inner">
-        <header>
-          <h1>Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-            <li class="breadcrumbs-item"><a href="#">Гостиницы</a></li>
-          </ul>
-        </header>
-        <section class="filter">
-          <h2 class="visually-hidden">Подбор жилья в Седоне по типу, стоимости и инфраструктуре</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-                <legend>Инфраструктура:</legend>
-                <ul>
-                    <li class="filter-option">
-                        <input class="filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool"
-                            checked>
-                        <label for="filter-swimming-pool">Бассейн</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="filter-input-checkbox" type="checkbox" name="parking" id="filter-parking" checked>
-                        <label for="filter-parking">Парковка</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
-                        <label for="filter-wifi">Wi-Fi</label>
-                    </li>
+        <div class="filter-background">
+          <header>
+            <h1 class="main-inner-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+              <li class="breadcrumbs-item"><a href="#">Гостиницы</a></li>
+            </ul>
+          </header>
+          <section class="filter">
+            <h2 class="visually-hidden">Подбор жилья в Седоне по типу, стоимости и инфраструктуре</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                  <legend>Инфраструктура:</legend>
+                  <ul class="accomodation-infrastructure-list">
+                      <li class="filter-option">
+                          <input class="filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool"
+                              checked>
+                          <label for="filter-swimming-pool">Бассейн</label>
+                      </li>
+                      <li class="filter-option">
+                          <input class="filter-input-checkbox" type="checkbox" name="parking" id="filter-parking" checked>
+                          <label for="filter-parking">Парковка</label>
+                      </li>
+                      <li class="filter-option">
+                          <input class="filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+                          <label for="filter-wifi">Wi-Fi</label>
+                      </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                  <legend>Тип жилья:</legend>
+                  <ul class="accomodation-type-list">
+                      <li class="filter-option">
+                          <input class="filter-input-radio" type="radio" name="housing-group" value="hotel" id="filter-hotel" checked>
+                          <label for="filter-hotel">Гостиница</label>
+                      </li>
+                      <li class="filter-option">
+                          <input class="filter-input-radio" type="radio" name="housing-group" value="motel" id="filter-motel">
+                          <label for="filter-motel">Мотель</label>
+                      </li>
+                      <li class="filter-option">
+                          <input class="filter-input-radio" type="radio" name="housing-group" value="apartments" id="filter-apartments">
+                          <label for="filter-apartments">Апартаменты</label>
+                      </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Стоимость, ₽:</legend>
+                <ul class="filter-range accomodation-price-list">
+                  <li class="price-controls">
+                    <label class="min-price">от <input class="min-price-input" type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input class="max-price-input" type="text" name="max-price" value="9000"></label>
+                  </li>
+                  <li>
+                    <input type="range" id="price-range-bar" name="range" min="0" max="100" value="80">
+                    <label class="visually-hidden" for="price-range-bar">Стоимость в рублях</label>
+                  </li>
                 </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Тип жилья:</legend>
-                <ul>
-                    <li class="filter-option">
-                        <input class="filter-input-radio" type="radio" name="housing-group" value="hotel" id="filter-hotel" checked>
-                        <label for="filter-hotel">Гостиница</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="filter-input-radio" type="radio" name="housing-group" value="motel" id="filter-motel">
-                        <label for="filter-motel">Мотель</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="filter-input-radio" type="radio" name="housing-group" value="apartments" id="filter-apartments">
-                        <label for="filter-apartments">Апартаменты</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="visually-hidden">Стоимость, ₽:</legend>
-              <ul class="filter-range">
-                <li class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="9000"></label>
-                </li>
-                <li>
-                  <input type="range" id="price-range-bar" name="range" min="0" max="100" value="80">
-                  <label class="visually-hidden" for="price-range-bar">Стоимость в рублях</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
-          </form>
-        </section>
+              </fieldset>
+              <button class="button accomodation-show-button" type="submit">Применить</button>
+              <button class="button accomodation-reset-button" type="reset">Сбросить</button>
+            </form>
+          </section>
+        </div>
         <section class="accomodation-list-output">
           <h2 class="visually-hidden">Список гостиниц в Седоне</h2>
           <div class="accomodation-type-output">
             <p>Найдено гостиниц: <span class="accomodation-type-value">58</span></p>
-            <ul>
+            <ul class="accomodation-sorting-option-list">
               <li>
                 <label class="visually-hidden" for="accomodation-select">Выбрать вариант сортировки:</label>
-                <select name="accomodation-type" id="accomodation-select">
+                <select class="accomodation-select-list" name="accomodation-type" id="accomodation-select">
                   <option value="cheap-ones-first">Сначала дешевые</option>
                   <option value="expensive-ones-first">Сначала дорогие</option>
                   <option value="popular-ones-first">Сначала популярные</option>
@@ -148,14 +150,14 @@
                 <p class="accomodation-price">от 4 000 ₽</p>
               </div>
               <a class="accomodation-description-link" href="#">Подробнее</a>
-              <button class="accomodation-favorite-link" type="button">В избранное</button>
+              <button class="button accomodation-favorite-link" type="button">В избранное</button>
               <div class="accomodation-rating">
                 <p class="accomodation-stars stars-4">
                   <span class="visually-hidden">Четырехзвездочный отель</span>
                 </p>
-                <p class="accomodation-rating">
+                <p class="accomodation-rating-value">
                   Рейтинг:
-                  <span class="accomodation-rating-value">8,5</span>
+                  <span>8,5</span>
                 </p>
               </div>
             </li>
@@ -171,14 +173,14 @@
                 <p class="accomodation-price">от 5 000 ₽</p>
               </div>
               <a class="accomodation-description-link" href="#">Подробнее</a>
-              <button class="accomodation-favorite-link" type="button">В избранное</button>
+              <button class="accomodation-favorite-link accomodation-favorite-link-added" type="button">В избранном</button>
               <div class="accomodation-rating">
                 <p class="accomodation-stars stars-4">
                   <span class="visually-hidden">Четырехзвездочный отель</span>
                 </p>
-                <p class="accomodation-rating">
+                <p class="accomodation-rating-value">
                   Рейтинг:
-                  <span class="accomodation-rating-value">9,2</span>
+                  <span>9,2</span>
                 </p>
               </div>
             </li>
@@ -199,9 +201,9 @@
                   <p class="accomodation-stars stars-3">
                     <span class="visually-hidden">Трехзвездочный отель</span>
                   </p>
-                  <p class="accomodation-rating">
+                  <p class="accomodation-rating-value">
                     Рейтинг:
-                    <span class="accomodation-rating-value">6,9</span>
+                    <span>6,9</span>
                   </p>
                 </div>
             </li>
@@ -222,9 +224,9 @@
                 <p class="accomodation-stars stars-2">
                   <span class="visually-hidden">Двухзвездочный отель</span>
                 </p>
-                <p class="accomodation-rating">
+                <p class="accomodation-rating-value">
                   Рейтинг:
-                  <span class="accomodation-rating-value">5,0</span>
+                  <span>5,0</span>
                 </p>
               </div>
             </li>
@@ -264,7 +266,7 @@
       </main>
       <footer class="page-footer">
         <section class="footer-social">
-          <h2 class="page-footer-title">Седона в социальных сетях</h2>
+          <h2 class="page-footer-title visually-hidden">Седона в социальных сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
