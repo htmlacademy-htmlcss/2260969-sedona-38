@@ -40,14 +40,13 @@ body {
   background-color: #f2f2f2;
   color: #333333;
   margin: 0;
-  display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: auto; /* */
 }
 
 h1 {
@@ -119,18 +118,19 @@ h1 {
   font-weight: 700;
   line-height: 36px;
   width: 376px;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .subscribe-button {
   background-color: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   width: 232px;
-  padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -282,7 +282,6 @@ h1 {
 }
 
 .hero-banner {
-  display: block;
   margin: 0 auto;
 }
 
@@ -304,7 +303,7 @@ h1 {
 }
 
 .advantages-item-full-width {
-  width: 1200px;
+  width: 100%;
   display: flex;
 }
 
@@ -327,15 +326,20 @@ h1 {
   flex-direction: row-reverse;
 }
 
-.advantages-title,
-.find-hotel-title {
+.advantages-wrapper {
+  padding: 69px 0px;
+}
+
+.advantages-title {
   color: #000000;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  }
+  margin: 0;
+  margin-bottom: 25px;
+}
 
 .advantages-description {
   color:  #333333;
@@ -343,11 +347,10 @@ h1 {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
 }
 
-.advantages-item-title,
-.more-benefits-title,
-.more-benefits-item-title {
+.advantages-item-title {
   color:  #000000;
   text-align: center;
   font-size: 24px;
@@ -356,8 +359,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.advantages-item-description,
-.more-benefits-item-description {
+.advantages-item-description {
   color: #333333;
   text-align: center;
   font-size: 18px;
@@ -384,6 +386,10 @@ h1 {
 
 /* more-benefits */
 
+.more-benefits-wrapper {
+  padding: 64px 0px;
+}
+
 .more-benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -396,14 +402,68 @@ h1 {
   padding: 80px 85px;
 }
 
+.more-benefits-description {
+  color: #333333;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
 
-.more-benefits-description,
+
+.more-benefits-title {
+  color:  #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.more-benefits-item-title {
+  color:  #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.more-benefits-item-description {
+  color: #333333;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.find-hotel {
+  padding: 96px 304px;
+}
+
+.find-hotel-title {
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+
 .find-hotel-description {
   color: #333333;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .first-benefits-background-color {
@@ -430,6 +490,10 @@ h1 {
 
 /* subscribe */
 
+.subscribe {
+  padding: 96px 258px 104px 258px;
+}
+
 .subscribe-title {
   color: #000000;
   text-align: center;
@@ -437,6 +501,8 @@ h1 {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-description {
@@ -445,27 +511,38 @@ h1 {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
-.subscribe-background .subscribe-title,
-.subscribe-background .subscribe-description {
+.subscribe-background-image .subscribe-title,
+.subscribe-background-image .subscribe-description {
   color: #ffffff;
 }
 
-.subscribe-background {
+.subscribe-background-image {
   background-color: #9DB5C4;
   background-image: url(../images/subscribe-background.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 96px 258px 104px 258px;
 }
 
 .subscribe-form-input {
   padding: 12px 20px;
   border-radius: 4px 0px 0px 4px;
-  background-color: #ffffff;
   width: 452px;
+  min-height: 52px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.input-first-background-color {
+  background-color: #ffffff;
+}
+
+.input-second-background-color {
+  background-color: #F2F2F2;
 }
 
 .subscribe-form-input::placeholder {
@@ -475,6 +552,15 @@ h1 {
   line-height: 24px;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form-email {
+  margin: 0;
+}
+
+
 /* catalog */
 
 .inner-wrapper {
@@ -483,6 +569,8 @@ h1 {
 
 .main-inner-title {
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .filter-background {
@@ -496,6 +584,11 @@ h1 {
 
 /* breadcrumbs */
 
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .breadcrumbs-item a {
   color: #ffffff;
   font-size: 16px;
@@ -505,6 +598,11 @@ h1 {
 }
 
 /* filter */
+
+.accomodation-filter  {
+  /* display: flex; */
+
+}
 
 .filter legend {
   color: #ffffff;
@@ -551,11 +649,6 @@ h1 {
   padding: 40px 0;
 }
 
-
-
-
-
-
 .accomodation-type-output {
   display: flex;
 }
@@ -588,7 +681,6 @@ h1 {
 }
  */
 
-
  .accomodation-type-output p {
   color: #000000;
   font-size: 30px;
@@ -600,11 +692,6 @@ h1 {
   margin-right: auto;
 
 }
-
-.accomodation-sorting-option-list {
-
-}
-
 
 .accomodation-type-value {
   color: #000000;
@@ -626,7 +713,6 @@ h1 {
   background-color: #ffffff;
 }
 
-
 .accomodation-item {
   width: 340px;
   box-sizing: border-box;
@@ -634,7 +720,6 @@ h1 {
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
-
 
 .accomodation-features {
   display: flex;
@@ -644,7 +729,6 @@ h1 {
 .accomodation-features p {
   margin: 0;
 }
-
 
 .accomodation-rating {
   display: flex;
@@ -663,7 +747,6 @@ h1 {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-
 }
 
 .accomodation-item a {
@@ -751,9 +834,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0 60px 0;
-
 }
-
 
 .pagination-item {
   width: 60px;
