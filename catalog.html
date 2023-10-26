@@ -8,9 +8,11 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип" src="images/logo/logo.svg" width="140" height="70">
-        </a>
+        <div class="logo">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" alt="Логотип" src="images/logo/logo.svg" width="140" height="70">
+          </a>
+        </div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -57,7 +59,7 @@
             <section class="filter">
               <h2 class="visually-hidden">Подбор жилья в Седоне по типу, стоимости и инфраструктуре</h2>
               <form class="accomodation-filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+                <fieldset class="filter-group">
                     <legend>Инфраструктура:</legend>
                     <ul class="accomodation-infrastructure-list">
                         <li class="filter-option">
@@ -75,7 +77,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-group">
                     <legend>Тип жилья:</legend>
                     <ul class="accomodation-type-list">
                         <li class="filter-option">
@@ -92,7 +94,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-group">
                   <legend>Стоимость, ₽:</legend>
                   <ul class="filter-range accomodation-price-list">
                     <li class="price-controls">
@@ -105,8 +107,10 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button class="button accomodation-show-button" type="submit">Применить</button>
-                <button class="button accomodation-reset-button" type="reset">Сбросить</button>
+                <div class="filter-buttons">
+                  <button class="button accomodation-show-button" type="submit">Применить</button>
+                  <button class="button accomodation-reset-button" type="reset">Сбросить</button>
+                </div>
               </form>
             </section>
           </div>
