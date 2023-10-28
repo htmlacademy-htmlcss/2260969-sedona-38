@@ -47,7 +47,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 h1 {
@@ -941,34 +941,35 @@ h1 {
 .accomodation-rating p {
   margin: 0;
 }
+
 /* pagination */
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0 60px 0;
-
+  gap: 8px;
 }
 
-
 .pagination-item {
-  width: 60px;
-  height: 60px;
-  border-radius: 4px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 60px;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-right: 8px;
+  border-radius: 4px;
 }
 
 .pagination-item a,
 .pagination-divider a{
+  min-width: 60px;
+  height: 60px;
   display: block;
-  padding: 10px;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .pagination-item {
@@ -976,7 +977,7 @@ h1 {
 }
 
 .pagination-divider {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #ffffff;
   color: #000000;
@@ -986,6 +987,7 @@ h1 {
 .pagination-divider a {
   text-decoration: none;
   color: inherit;
+  line-height: 60px;
 }
 
 .pagination-item-current {
@@ -993,7 +995,7 @@ h1 {
   color: #000000;
   font-size: 20px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 60px;
   text-transform: uppercase;
 }
 
@@ -1002,21 +1004,9 @@ h1 {
   color: #000000;
 }
 
-.pagination-item:last-child {
-  margin-right: 0;
-}
-
 .pagination-item-current a {
   color: inherit;
 }
-
-.pagination-item a {
-  text-decoration: none;
-  color: inherit;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
 
 /* footer */
 .page-footer {
