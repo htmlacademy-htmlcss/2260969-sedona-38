@@ -769,17 +769,25 @@ h1 {
 }
 
 .accomodation-show-options {
-  width: 144px;
-  margin-left: 70px;
-  position: relative;
+  width: 164px;
+  margin-left: 100px;
   display: flex;
 }
 
+.accomodation-show-options-item {
+  position: relative;
+}
+
+
+.accomodation-show-options li:not(:last-child) {
+  margin-right: 8px;
+}
 
 .accomodation-show-options a {
   width: 48px;
   height: 48px;
   display: block;
+
 }
 
 .show-accomodation-cards::before {
@@ -787,24 +795,23 @@ h1 {
   position: absolute;
   top: 0px;
   left: 0px;
-	width: 16px;
-	height: 14px;
+  width: 24px;
+	height: 20px;
 	padding: 14px 12px;
   background-image: url(../images/table-view.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
   border: 2px solid #000000;
-
 }
 
 .show-accomodation-fullinfo::before {
   content: "";
   position: absolute;
   top: 0px;
-  left: 50px;
-	width: 16px;
-	height: 14px;
+  left: 0px;
+  width: 24px;
+	height: 20px;
 	padding: 14px 12px;
   background-image: url(../images/full-view.svg);
   background-repeat: no-repeat;
@@ -817,9 +824,9 @@ h1 {
   content: "";
   position: absolute;
   top: 0px;
-  left: 100px;
-	width: 16px;
-	height: 14px;
+  left: 0px;
+  width: 24px;
+	height: 20px;
 	padding: 14px 12px;
   background-image: url(../images/list-view.svg);
   background-repeat: no-repeat;
@@ -828,9 +835,7 @@ h1 {
   border: 2px solid #E5E5E5;
 }
 
-
-
- .accomodation-type-output p {
+.accomodation-type-output p {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -839,7 +844,6 @@ h1 {
   margin: 0;
   padding: 0;
   margin-right: auto;
-
 }
 
 .accomodation-type-value {
