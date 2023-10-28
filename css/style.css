@@ -184,7 +184,8 @@ h1 {
   left: 0;
 }
 
-.navigation-link {
+.navigation-link-search,
+.navigation-link-search-favorite {
   color: inherit;
   text-decoration: none;
 }
@@ -209,6 +210,10 @@ h1 {
   flex-wrap: wrap;
 }
 
+.navigation-item {
+  position: relative;
+  display: block;
+}
 
 .navigation-item a {
   display: block;
@@ -216,7 +221,7 @@ h1 {
 }
 
 .navigation-user {
-  position: relative;
+
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -229,10 +234,57 @@ h1 {
 
 .navigation-item-search {
   width: 44px;
+  height: 64px;
+
 }
 
 .navigation-item-search-favorite {
   width: 44px;
+  height: 64px;
+
+}
+
+.navigation-link-search,
+.navigation-link-search-favorite {
+  display: block;
+  width: 44px;
+  height: 64px;
+  position: relative;
+}
+
+.navigation-link-search a,
+.navigation-link-search-favorite a {
+
+  display: block;
+  width: 44px;
+  height: 64px;
+  padding: 20px 16px;
+
+
+}
+
+.navigation-link-search::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+	width: 20px;
+	height: 20px;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.navigation-link-search-favorite::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+	width: 20px;
+	height: 20px;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .favorite-hotels {
@@ -246,11 +298,17 @@ h1 {
   height: 20px;
   border-radius: 10px;
   background-color: #7DB54F;
-  position: relative;
-  z-index: 999;
+  position: absolute;
+  top: 15px;
+  left: 21px;
+
 }
 
-.navigation-item-search::before {
+
+
+
+
+/* .navigation-item-search::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -274,7 +332,7 @@ h1 {
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+} */
 
 
 /* hero */
