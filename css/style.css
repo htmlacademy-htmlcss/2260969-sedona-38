@@ -96,6 +96,7 @@ h1 {
   text-decoration: none;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .come-here-button {
@@ -104,6 +105,7 @@ h1 {
   padding-top: 8px;
   padding-bottom: 8px;
   display: block;
+  margin: 8px 0;
 }
 
 .find-hotel-button {
@@ -173,10 +175,6 @@ h1 {
   text-transform: capitalize;
 }
 
-.logo {
-  width: 140px;
-}
-
 .navigation-logo {
   position: absolute;
   top: 0;
@@ -198,21 +196,34 @@ h1 {
   text-underline-position: under;
 }
 
+
+.navigation-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-underline-offset: 17px;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+}
+
 .navigation {
   display: flex;
-  margin-left: 48px;
+  margin-left: 188px;
   width: 890px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
 }
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
+  max-width: 370px;
+  justify-content: flex-end;
 }
 
 .navigation-user li:last-child {
@@ -672,6 +683,7 @@ h1 {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -681,7 +693,39 @@ h1 {
   font-weight: 400;
   line-height: 21px;
   text-decoration: none;
+  padding: 10px 12px;
 }
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 12px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/arrow.svg");
+  width: 7px;
+  height: 10px;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.breadcrumbs-icon-home {
+  fill: #ffffff;
+}
+
+
 
 /* filter */
 
@@ -769,19 +813,18 @@ h1 {
 }
 
 .accomodation-show-options {
-  width: 164px;
-  margin-left: 100px;
+  width: 175px;
+  margin-left: 60px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .accomodation-show-options-item {
   position: relative;
 }
 
-
-.accomodation-show-options li:not(:last-child) {
-  margin-right: 8px;
-}
 
 .accomodation-show-options a {
   width: 48px;
@@ -960,6 +1003,7 @@ h1 {
 .accomodation-favorite-link-added {
   background-color: #7DB54F;
   border: 1px solid #E6E6E6;
+  cursor: pointer;
 }
 
 .accomodation-rating-value {
@@ -977,9 +1021,50 @@ h1 {
   background-color: #f2f2f2;
 }
 
+.accomodation-rating {
+  position: relative;
+}
+
 .accomodation-rating p {
   margin: 0;
 }
+
+
+.accomodation-stars::after {
+  content: "";
+  position: absolute;
+  left: 44px;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 3px;
+  background-image: url("../images/star.svg");
+  background-repeat: space repeat;
+  height: 17px;
+}
+
+.stars-2::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  left: 25px;
+}
+
+
+.stars-3::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  left: 35px;
+}
+
+
+.stars-4::after {
+  content: "";
+  position: absolute;
+  width: 85px;
+}
+
+
 
 /* pagination */
 
@@ -1074,6 +1159,20 @@ h1 {
 }
 
 
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.30);
+}
+
+
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -1105,6 +1204,10 @@ h1 {
   background-position: 0 0;
 }
 
+.footer-social-item-vk:active {
+  opacity:0.3;
+}
+
 .footer-social-item-telegram::before {
   content: "";
   position: absolute;
@@ -1115,6 +1218,10 @@ h1 {
   background-image: url(../images/social/telegram.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.footer-social-item-telegram:active {
+  opacity:0.3;
 }
 
 .footer-social-item-youtube::before {
@@ -1129,8 +1236,25 @@ h1 {
   background-position: 0 0;
 }
 
+.footer-social-item-youtube:active {
+  opacity:0.3;
+}
+
 .footer-logo-link {
   display: flex;
   align-items: center;
+}
+
+
+.footer-logo-link:hover {
+  fill: #756157;
+}
+
+.footer-logo-link:focus {
+  fill: #756157;
+}
+
+ .footer-logo-link:active {
+  opacity:0.3;
 }
 

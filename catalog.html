@@ -8,11 +8,9 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <div class="logo">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип" src="images/logo/logo.svg" width="140" height="70">
           </a>
-        </div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -52,8 +50,18 @@
             <header>
               <h1 class="main-inner-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
-                <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-                <li class="breadcrumbs-item"><a href="#">Гостиницы</a></li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <span class="visually-hidden">На главную</span>
+                    <svg class="breadcrumbs-icon-home" xmlns="http://www.w3.org/2000/svg" width="13" height="12">
+                      <path d="m6.393 0-6 5.8V12h12V5.8l-6-5.8Zm5 11h-10V6.2l5-4.8 5 4.8V11Z" />
+                      <path d="M4.393 10h1V7.5h2V10h1V6.5h-4V10Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item breadcrumbs-current">
+                  <a class="breadcrumbs-link">Гостиницы</a>
+                </li>
               </ul>
             </header>
             <section class="filter">
