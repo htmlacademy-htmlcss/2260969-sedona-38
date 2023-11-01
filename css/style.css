@@ -89,6 +89,9 @@ h1 {
 
 /* buttons */
 
+
+/* добавить disabled */
+
 .button {
   color: #ffffff;
   text-align: center;
@@ -109,6 +112,18 @@ h1 {
   margin: 8px 0;
 }
 
+.come-here-button:hover {
+  background-color: #615048;
+}
+
+.come-here-button:active {
+  background-color: #615048;
+}
+
+.come-here-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .find-hotel-button {
   background-color: #756157;
   font-size: 20px;
@@ -122,6 +137,19 @@ h1 {
   box-sizing: border-box;
 }
 
+.find-hotel-button:hover {
+  background-color: #615048;
+}
+
+.find-hotel-button:active {
+  background-color: #615048;
+}
+
+.find-hotel-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .subscribe-button {
   background-color: #82B3D3;
   border-radius: 0px 4px 4px 0px;
@@ -132,6 +160,18 @@ h1 {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .accomodation-show-button {
@@ -147,6 +187,18 @@ h1 {
   text-transform: uppercase;
 }
 
+.accomodation-show-button:hover {
+  background-color: #68A2CA;
+}
+
+.accomodation-show-button:active {
+  background-color: #68A2CA;
+}
+
+.accomodation-show-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .accomodation-reset-button {
   background-color: transparent;
   width: 191px;
@@ -157,7 +209,67 @@ h1 {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
+
+.accomodation-reset-button:hover {
+  opacity: 0.6;
+}
+
+.accomodation-reset-button:active {
+  border-radius: 4px;
+  border: 3px solid #83B3D3;
+}
+
+.accomodation-reset-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.accomodation-favorite-button {
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 140px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.accomodation-favorite-button:hover {
+  background-color: #68A2CA;
+}
+
+.accomodation-favorite-button:active {
+  background-color: #68A2CA;
+}
+
+.accomodation-favorite-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.accomodation-favorite-button-added {
+  background-color: #7DB54F;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+
+.accomodation-favorite-button-added:hover {
+  background-color: #68A2CA;
+}
+
+.accomodation-favorite-button-added:active {
+  background-color: #68A2CA;
+}
+
+.accomodation-favorite-button-added:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* header */
 
@@ -1037,8 +1149,7 @@ h1 {
   line-height: 21px;
 }
 
-.accomodation-description-link,
-.accomodation-favorite-link {
+.accomodation-description-link {
   color: #ffffff;
   text-align: center;
   font-family: inherit;
@@ -1056,15 +1167,7 @@ h1 {
   background-color: #756157;
 }
 
-.accomodation-favorite-link {
-  background-color: #82B3D3;
-}
 
-.accomodation-favorite-link-added {
-  background-color: #7DB54F;
-  border: 1px solid #E6E6E6;
-  cursor: pointer;
-}
 
 .accomodation-rating-value {
   color:#333333;
