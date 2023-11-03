@@ -1593,8 +1593,6 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  text-transform: capitalize;
-  /* column-gap: 48px; */
 }
 
 
@@ -1743,6 +1741,7 @@ h1 {
   color: #ffffff;
   background-color: #333333;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .popover-content:before {
