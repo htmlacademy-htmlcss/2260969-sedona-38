@@ -68,7 +68,8 @@ h1 {
 .accomodation-list,
 .pagination-list,
 .accomodation-search-request-list,
-.accomodation-search-request-quantity-list {
+.accomodation-search-request-quantity-list,
+.accomodation-filter-range-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -185,8 +186,6 @@ h1 {
   border-radius: 4px;
   width: 191px;
   padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -203,6 +202,7 @@ h1 {
 
 .accomodation-show-button:focus {
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .accomodation-reset-button {
@@ -894,9 +894,12 @@ h1 {
 
 .filter-buttons {
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: center;
   flex-direction: column;
+  gap: 32px;
   margin-left: 74px;
+
+
 }
 
 
@@ -917,18 +920,141 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  outline: none;
+  background-color: #F2F2F2;
+}
+
+.min-price-input:hover,
+.max-price-input:hover {
+  background-color: #E6E6E6;
+}
+
+.min-price-input:focus,
+.max-price-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.min-price-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.max-price-input {
+  border-radius: 0 4px 4px 0;
 }
 
 .min-price,
-.max-price{
+.max-price {
   color: #000000;
   text-align: right;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  position: relative;
+}
+
+.min-price span,
+.max-price span {
+  opacity: 0.3;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+
+.input-slider-wrapper {
+  margin-top: 36px;
+  position: relative;
+  padding: 8px 0;
+  height: 20px;
+}
+
+.input-slider-total-range {
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.input-slider-current-range {
+  width: 226px;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.input-slider-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+
+.input-slider-value:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.input-slider-value:active {
+  outline: 2px solid #83B3D3;
+}
+
+.input-slider-max-value {
+  left: 206px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accomodation-price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+
+.accomodation-filter-range-list {
+  display: flex;
+  padding: 0;
+  width: 288px;
+}
+
+
+
+.price-controls input {
+  padding: 12px 20px;
+  width: 143px;
+  box-sizing: border-box;
+
+}
 
 
 /* accomodation output*/
@@ -1087,7 +1213,6 @@ h1 {
   cursor: pointer;
 }
 
-
 .accomodation-select-icon {
   position: absolute;
   content: "";
@@ -1198,8 +1323,6 @@ h1 {
 .accomodation-description-link {
   background-color: #756157;
 }
-
-
 
 .accomodation-rating-value {
   color:#333333;

@@ -107,13 +107,28 @@
                 <fieldset class="filter-group">
                   <legend>Стоимость, ₽:</legend>
                   <ul class="filter-range accomodation-price-list">
-                    <li class="price-controls">
-                      <label class="min-price">от <input class="min-price-input" type="text" name="min-price" value="0"></label>
-                      <label class="max-price">до <input class="max-price-input" type="text" name="max-price" value="9000"></label>
-                    </li>
+                    <ul class="accomodation-filter-range-list">
+                      <li class="price-controls">
+                        <label class="min-price">
+                          <span>от</span>
+                          <input class="min-price-input" type="text" name="min-price" value="0">
+                        </label>
+                      </li>
+                      <li class="price-controls">
+                        <label class="max-price">
+                          <span>до</span>
+                          <input class="max-price-input" type="text" name="max-price" value="9000">
+                        </label>
+                      </li>
+                    </ul>
                     <li>
-                      <input type="range" id="price-range-bar" name="range" min="0" max="100" value="80">
-                      <label class="visually-hidden" for="price-range-bar">Стоимость в рублях</label>
+                      <div class="input-slider-wrapper">
+                        <div class="input-slider-total-range">
+                          <div class="input-slider-current-range"></div>
+                        </div>
+                        <button class="input-slider-value input-slider-min-value"></button>
+                        <button class="input-slider-value input-slider-max-value"></button>
+                      </div>
                     </li>
                   </ul>
                 </fieldset>
