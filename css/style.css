@@ -52,6 +52,7 @@ img {
 h1 {
   font-weight: 700;
   line-height: 78px;
+  font-size: 60px;
 }
 
 .navigation-list,
@@ -521,6 +522,7 @@ h1 {
 }
 
 .advantages-item-title {
+  position: relative;
   color: #000000;
   text-align: center;
   font-size: 24px;
@@ -539,7 +541,7 @@ h1 {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  bottom: 190px;
+  top: 125%;
 }
 
 .advantages-item .advantages-item-title::after {
@@ -945,8 +947,9 @@ h1 {
   border-color: #814b18;
 }
 
-.control-input:disabled+.control-mark {
-  border-color: #242424;
+.control-input[type="checkbox"]:disabled+.control-mark {
+  cursor: no-drop;
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
@@ -957,10 +960,20 @@ h1 {
   background-image: url(../images/tick.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/tick.svg");
   width: 20px;
   height: 20px;
 }
+
+.control-input[type="checkbox"]:focus+.control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+
+.control-input[type="checkbox"]:disabled ~ span {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
 
 /* radio */
 .control-input[type="radio"]+.control-mark {
@@ -978,9 +991,18 @@ h1 {
   content: "";
 }
 
-.control-label {
-  line-height: 23px;
+.control-input[type="radio"]:focus+.control-mark {
+  outline: 3px solid #83B3D3;
 }
+
+
+.control-input[type="radio"]:disabled ~ span {
+    cursor: no-drop;
+    opacity: 0.3;
+}
+
+
+
 
 .min-price-input,
 .max-price-input {
@@ -1085,12 +1107,14 @@ h1 {
   display: flex;
   padding: 0;
   width: 288px;
+  gap: 2px;
 }
 
 .price-controls input {
   padding: 12px 20px;
   width: 143px;
   box-sizing: border-box;
+  border-color: transparent;
 
 }
 
@@ -1781,11 +1805,10 @@ h1 {
   background-color: #E6E6E6;
 }
 
-.quantity-counter-minus-button:active,
-.quantity-counter-plus-button:active {
+.quantity-counter-minus-button svg:active,
+.quantity-counter-plus-button svg:active {
   border-radius: 4px;
-  border: 3px solid #83B3D3;
-  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .quantity-counter-minus-button:focus,
