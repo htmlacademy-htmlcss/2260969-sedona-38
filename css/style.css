@@ -348,7 +348,7 @@ h1 {
 
 .navigation {
   display: flex;
-  margin-left: 188px;
+  margin-left: 168px;
   width: 890px;
 }
 
@@ -399,8 +399,8 @@ h1 {
 .navigation-link-search::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 23px;
+  left: 16px;
   width: 20px;
   height: 20px;
   background-image: url(../images/search.svg);
@@ -411,8 +411,8 @@ h1 {
 .navigation-link-search-favorite::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 23px;
+  left: 15px;
   width: 20px;
   height: 20px;
   background-image: url(../images/heart.svg);
@@ -432,7 +432,7 @@ h1 {
   border-radius: 10px;
   background-color: #7DB54F;
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 21px;
 }
 
@@ -443,8 +443,10 @@ h1 {
 }
 
 .hero-banner {
-  margin: 0 auto;
   object-fit: fill;
+  margin: 0 auto;
+  margin-bottom: 26px;
+
 }
 
 .hero-background {
@@ -487,8 +489,7 @@ h1 {
 .advantages-item {
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px;
-  padding: 103px 84px;
+  padding: 112px 85px 89px 85px;
   box-sizing: border-box;
   position: relative;
 }
@@ -498,7 +499,7 @@ h1 {
 }
 
 .advantages-wrapper {
-  padding: 69px 0px;
+  padding: 69px 0px 91px 0px;
 }
 
 .advantages-title {
@@ -530,7 +531,7 @@ h1 {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 
 .advantages-item-title::after {
@@ -541,7 +542,7 @@ h1 {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  top: 125%;
+  top: 153%;
 }
 
 .advantages-item .advantages-item-title::after {
@@ -593,7 +594,7 @@ h1 {
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
-  padding: 184px 85px 80px 85px;
+  padding: 182px 85px 80px 85px;
   position: relative;
 }
 
@@ -670,8 +671,8 @@ h1 {
 .more-benefits-item-accomodation .more-benefits-item-title::before {
   content: "";
   position: absolute;
-  top: 85px;
-  left: 160px;
+  top: 80px;
+  left: 164px;
   width: 75px;
   height: 72px;
   background-image: url(../images/house-icon.svg);
@@ -682,8 +683,8 @@ h1 {
 .more-benefits-item-food .more-benefits-item-title::before {
   content: "";
   position: absolute;
-  top: 85px;
-  left: 160px;
+  top: 80px;
+  left: 164px;
   width: 75px;
   height: 72px;
   background-image: url(../images/burger-icon.svg);
@@ -694,8 +695,8 @@ h1 {
 .more-benefits-item-gift .more-benefits-item-title::before {
   content: "";
   position: absolute;
-  top: 85px;
-  left: 160px;
+  top: 80px;
+  left: 164px;
   width: 75px;
   height: 76px;
   background-image: url(../images/gift-icon.svg);
@@ -706,7 +707,7 @@ h1 {
 /* subscribe */
 
 .subscribe {
-  padding: 96px 258px 104px 258px;
+  padding: 98px 258px 104px 258px;
 }
 
 .subscribe-title {
@@ -1552,8 +1553,7 @@ h1 {
 .page-footer {
   margin: 0 70px;
   display: flex;
-  /* padding: 40px 0 30px 70px; */
-  padding: 40px 0 30px 0;
+  padding: 48px 0 30px 0;
   position: relative;
 }
 
