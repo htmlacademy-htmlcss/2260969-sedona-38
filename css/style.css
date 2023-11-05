@@ -279,11 +279,13 @@ h1 {
   background-color: #82B3D3;
   border-radius: 10px;
   width: 577px;
-  padding: 18px 77px;
+  padding: 15px 77px 10px 77px;
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+
 }
 
 .find-accomodation-modal-button:hover {
@@ -800,21 +802,28 @@ h1 {
   margin-bottom: 8px;
 }
 
+
+
 .filter-background {
   background-color: #9DB5C4;
   background-image: url(../images/catalog-background.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 53px 68px;
+  padding-top: 35px;
+  padding-left: 68px;
 }
+
+
 
 /* breadcrumbs */
 
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  /* padding: 31px 70px 70px 71px; */
 }
 
 .breadcrumbs-item a {
@@ -823,12 +832,12 @@ h1 {
   font-weight: 400;
   line-height: 21px;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 10px 8px 12px 0px;
 }
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 12px;
+  margin-right: 21px;
 }
 
 .breadcrumbs li:last-child {
@@ -838,7 +847,7 @@ h1 {
 .breadcrumbs li::after {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 8px;
   right: -10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -904,12 +913,18 @@ h1 {
 }
 
 .filter-buttons {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
-  margin-left: 74px;
+  width: 190px;
+  padding-top: 55px;
+  margin-left: 70px;
+
 }
+
+.filter-buttons .accomodation-show-button{
+  margin-bottom: 30px;
+}
+
+
+
 
 
 .filter fieldset {
@@ -1100,7 +1115,6 @@ h1 {
 .accomodation-price-list {
   display: flex;
   flex-direction: column;
-  gap: 36px;
 }
 
 
@@ -1128,7 +1142,8 @@ h1 {
   flex-wrap: wrap;
   gap: 20px;
   border-bottom: 1px solid #E6E6E6;
-  padding: 40px 0;
+  padding: 35px 0 35px 0;
+  padding-bottom: 35px;
 }
 
 .accomodation-type-output {
@@ -1243,6 +1258,7 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-top: 3px;
   margin-right: auto;
 }
 
@@ -1343,12 +1359,12 @@ h1 {
 
 .accomodation-item img {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .accomodation-item h3 {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .accomodation-features {
@@ -1478,7 +1494,7 @@ h1 {
 .pagination-item a,
 .pagination-item-divider a,
 .pagination-item-current a {
-  min-width: 60px;
+  min-width: 54px;
   height: 60px;
   display: block;
   text-align: center;
@@ -1509,11 +1525,10 @@ h1 {
 }
 
 .pagination-item-divider {
-  min-width: 60px;
+  min-width: 54px;
   height: 60px;
   background-color: #ffffff;
   color: #000000;
-  margin-right: 8px;
 }
 
 .pagination-item-divider a {
@@ -1666,7 +1681,6 @@ h1 {
 }
 
 .modal-accomodation-search {
-
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1676,6 +1690,7 @@ h1 {
   box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
   width: 717px;
   padding: 64px 70px;
+  padding-top: 65px;
   box-sizing: border-box;
   z-index: 99;
 }
@@ -1692,7 +1707,7 @@ h1 {
 
 .accomodation-search-request {
   width: 577px;
-  gap: 48px;
+
 }
 
 .accomodation-search-request-item {
@@ -1911,10 +1926,10 @@ h1 {
 .popover-content {
   visibility: visible;
   position: absolute;
-  top: 40px;
+  top: 41px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 15px 18px 18px 22px;
+  padding: 23px 18px 18px 22px;
   width: 256px;
   font-size: 16px;
   font-style: normal;
