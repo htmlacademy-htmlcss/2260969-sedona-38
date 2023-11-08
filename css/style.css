@@ -1767,6 +1767,7 @@ img {
 .accomodation-search-request-quantity-item {
   display: flex;
   margin-bottom: 48px;
+  justify-content: space-between;
 }
 
 .accomodation-search-request-quantity-item input {
@@ -1926,6 +1927,11 @@ img {
   background-color: #333;
   border-radius: 10px;
   box-sizing: border-box;
+  display: none;
+  z-index: 1;
+}
+
+.popover-content-open {
   display: block;
 }
 
@@ -1938,4 +1944,5 @@ img {
   width: 19px;
   height: 9px;
   background-image: url("../images/triangle.svg");
+  z-index: 1;
 }
