@@ -228,29 +228,35 @@
                       <label class="quantity-counter-adult-label" for="quantity-counter-adult">
                         <span class="quantity-counter-title">Взрослые:</span>
                       </label>
-                        <span class="quantity-counter-wrapper">
-                          <button class="quantity-counter-minus-button" href="#" type="button">
+                        <div class="quantity-counter-wrapper">
                             <span class="visually-hidden">Минус.</span>
-                              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
-                              </svg>
-                          </button>
+                            <button class="quantity-counter-minus-button">
+                                <!-- <svg class="quantity-counter-minus-icon" tabindex="0" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg> -->
+                                <svg class="quantity-counter-minus-icon" tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 9V11H17V9H3Z" />
+                                </svg>
+                            </button>
                           <input class="quantity-counter-adult" id="quantity-counter-adult" type="text" value="2" size="2" data-max-count="20" required/>
-                          <button class="quantity-counter-plus-button" type="button">
                             <span class="visually-hidden">Плюс.</span>
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                            </svg>
-                          </button>
-                        </span>
+                            <button class="quantity-counter-plus-button">
+                                <!-- <svg class="quantity-counter-plus-icon" tabindex="0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg> -->
+                                <svg class="quantity-counter-plus-icon" tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div class="accomodation-search-request-quantity-item">
                       <label class="quantity-counter-children-label" for="quantity-counter-children">
                         <span class="quantity-counter-title">Дети:</span>
                         <span class="popover-wrapper">
-                          <span class="popover">
+                          <span class="popover" tabindex="0">
+                            <span class="visually-hidden">Информация.</span>
                             <span class="popover-button">
-                              <span class="visually-hidden">Информация.</span>
                               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
@@ -262,21 +268,21 @@
                           </span>
                         </span>
                       </label>
-                        <span class="quantity-counter-wrapper">
-                          <button class="quantity-counter-minus-button" type="button">
+                        <div class="quantity-counter-wrapper">
                             <span class="visually-hidden">Минус.</span>
-                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
-                            </svg>
-                          </button>
+                            <button class="quantity-counter-minus-button" type="button">
+                              <svg class="quantity-counter-minus-icon" tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9V11H17V9H3Z" />
+                              </svg>
+                            </button>
                           <input class="quantity-counter-children" id="quantity-counter-children" type="text" value="2" required/>
-                          <button class="quantity-counter-plus-button" type="button">
                             <span class="visually-hidden">Плюс.</span>
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                            </svg>
-                          </button>
-                      </span>
+                            <button class="quantity-counter-plus-button" type="button">
+                              <svg class="quantity-counter-plus-icon" tabindex="0" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                              </svg>
+                            </button>
+                      </div>
                     </div>
                   </div>
                 </li>

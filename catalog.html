@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header" data-test="header">
+      <header class="page-header">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип." src="images/logo/logo.svg" width="140" height="70">
           </a>
@@ -43,7 +43,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-inner main-container" data-test="main">
+      <main class="main-inner main-container">
           <div class="filter-background">
             <header>
               <h1 class="main-inner-title">Гостиницы Седоны</h1>
@@ -62,7 +62,7 @@
                 </li>
               </ul>
             </header>
-            <section class="filter" data-test="filter">
+            <section class="filter">
               <h2 class="visually-hidden">Подбор жилья в Седоне по типу, стоимости и инфраструктуре.</h2>
               <form class="accomodation-filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-group">
@@ -142,21 +142,25 @@
                         <div class="input-slider-total-range">
                           <div class="input-slider-current-range"></div>
                         </div>
-                        <button class="input-slider-value input-slider-min-value" type="button"></button>
-                        <button class="input-slider-value input-slider-max-value" type="button"></button>
+                        <button class="input-slider-value input-slider-min-value" type="button">
+                          <span class="visually-hidden">Уменьшить.</span>
+                        </button>
+                        <button class="input-slider-value input-slider-max-value" type="button">
+                          <span class="visually-hidden">Увеличить.</span>
+                        </button>
                       </div>
                     </li>
                   </ul>
                 </fieldset>
                 <div class="filter-buttons">
-                  <button class="button accomodation-show-button" type="button">Применить</button>
+                  <button class="button accomodation-show-button" type="submit">Применить</button>
                   <button class="button accomodation-reset-button" type="reset">Сбросить</button>
                 </div>
               </form>
             </section>
           </div>
           <div class="inner-wrapper">
-            <section class="accomodation-list-output" data-test="catalog">
+            <section class="accomodation-list-output">
               <h2 class="visually-hidden">Список гостиниц в Седоне.</h2>
               <div class="accomodation-type-output">
                 <p>Найдено гостиниц: <span class="accomodation-type-value">38</span></p>
@@ -204,7 +208,7 @@
                   </a>
                   <div class="accomodation-features">
                     <p class="accomodation-type">Гостиница</p>
-                    <p class="accomodation-price">от 4 000 ₽</p>
+                    <p class="accomodation-price">От 4000 ₽</p>
                   </div>
                   <div class="accomodation-item-buttons">
                     <a class="accomodation-description-link" href="#">Подробнее</a>
@@ -229,7 +233,7 @@
                   </a>
                   <div class="accomodation-features">
                     <p class="accomodation-type">Гостиница</p>
-                    <p class="accomodation-price">от 5 000 ₽</p>
+                    <p class="accomodation-price">От 5000 ₽</p>
                   </div>
                   <div class="accomodation-item-buttons">
                     <a class="accomodation-description-link" href="#">Подробнее</a>
@@ -254,7 +258,7 @@
                   </a>
                     <div class="accomodation-features">
                       <p class="accomodation-type">Гостиница</p>
-                      <p class="accomodation-price">от 2 500 ₽</p>
+                      <p class="accomodation-price">От 2500 ₽</p>
                     </div>
                     <div class="accomodation-item-buttons">
                       <a class="accomodation-description-link" href="#">Подробнее</a>
@@ -279,7 +283,7 @@
                   </a>
                   <div class="accomodation-features">
                     <p class="accomodation-type">Гостиница</p>
-                    <p class="accomodation-price">от 1 500 ₽</p>
+                    <p class="accomodation-price">От 1500 ₽</p>
                   </div>
                   <div class="accomodation-item-buttons">
                     <a class="accomodation-description-link" href="#">Подробнее</a>
@@ -318,7 +322,7 @@
               </ul>
             </section>
           </div>
-        <section class="subscribe" data-test="subscribe">
+        <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -330,7 +334,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer" data-test="footer">
+      <footer class="page-footer">
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-item-vk" href="https://vk.com/htmlacademy">
