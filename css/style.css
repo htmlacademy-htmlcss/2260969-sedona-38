@@ -1801,6 +1801,8 @@ img {
 .quantity-counter-wrapper {
   display: flex;
   margin-left: 46px;
+  background-color:#f2f2f2;
+
 }
 
 .quantity-counter-minus-button,
