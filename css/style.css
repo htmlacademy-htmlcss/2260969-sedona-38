@@ -1,17 +1,17 @@
 @font-face {
   font-display: swap;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 .visually-hidden:not(:focus, :active),
@@ -425,7 +425,7 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   position: absolute;
   top: 12px;
   left: 21px;
@@ -1132,7 +1132,7 @@ img {
 }
 
 .accomodation-show-options {
-  max-width: 275px;
+  max-width: 160px;
   margin-left: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -1608,7 +1608,6 @@ img {
   padding: 9px 10px;
 }
 
-
 .footer-social-item-vk-icon,
 .footer-social-item-telegram-icon,
 .footer-social-item-youtube-icon {
@@ -1698,11 +1697,8 @@ img {
   width: 577px;
 }
 
-.accomodation-search-request-item:nth-child(1) {
-  margin-bottom: 48px;
-}
 
-.accomodation-search-request-item:nth-child(2) {
+.accomodation-search-request-item {
   margin-bottom: 48px;
 }
 
@@ -1802,7 +1798,6 @@ img {
   display: flex;
   margin-left: 46px;
   background-color:#f2f2f2;
-
 }
 
 .quantity-counter-minus-button,
@@ -1823,14 +1818,13 @@ img {
 
 svg.quantity-counter-minus-icon,
 svg.quantity-counter-plus-icon {
-  fill: #7561574D;
+  fill: #7561574d;
 }
 
 .quantity-counter-minus-icon:hover ,
 .quantity-counter-plus-icon:hover  {
   fill: #000000;
 }
-
 
 .quantity-counter-minus-button svg:focus,
 .quantity-counter-plus-button svg:focus {
@@ -1890,8 +1884,10 @@ svg.quantity-counter-plus-icon {
   display: block;
 }
 
+
+
 .message-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .accomodation-search-request-start-label,
@@ -1943,7 +1939,7 @@ svg.quantity-counter-plus-icon {
 .popover-content {
   visibility: visible;
   position: absolute;
-  top: 38px;
+  top: 39px;
   left: 50%;
   transform: translateX(-50%);
   padding: 23px 18px 18px 22px;
