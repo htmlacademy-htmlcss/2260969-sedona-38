@@ -1697,6 +1697,11 @@ img {
   width: 577px;
 }
 
+
+.accomodation-search-request-item {
+  margin-bottom: 48px;
+}
+
 .accomodation-search-request-item {
   display: flex;
   justify-content: space-between;
@@ -1866,20 +1871,20 @@ svg.quantity-counter-plus-icon {
   outline: none;
 }
 
-.accomodation-search-request-message {
-  min-height: 48px;
-}
-
 .message {
+  position: absolute;
+  top: 52px;
+  left: 157px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 21px;
   text-transform: none;
   color: #333333;
   display: block;
-  padding-left: 157px;
 }
+
+
 
 .message-error {
   color: #ff5757;
