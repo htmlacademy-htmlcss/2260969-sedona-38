@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   background-color: #f2f2f2;
@@ -73,7 +73,7 @@ img {
 
 .page-container {
   background-color: #ffffff;
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -121,7 +121,7 @@ img {
 }
 
 .come-here-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .find-hotel-button {
@@ -146,7 +146,7 @@ img {
 }
 
 .find-hotel-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-button {
@@ -163,7 +163,6 @@ img {
 
 .subscribe-button:hover {
   background-color: #68a2ca;
-
 }
 
 .subscribe-button:active {
@@ -171,7 +170,7 @@ img {
 }
 
 .subscribe-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .accomodation-show-button {
@@ -194,7 +193,7 @@ img {
 }
 
 .accomodation-show-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
   outline: 3px solid #83b3d3;
 }
 
@@ -219,7 +218,7 @@ img {
 }
 
 .accomodation-reset-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
   outline: 3px solid #83b3d3;
 }
 
@@ -247,7 +246,7 @@ img {
 }
 
 .accomodation-favorite-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .accomodation-favorite-button-added {
@@ -265,7 +264,7 @@ img {
 }
 
 .accomodation-favorite-button-added:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .find-accomodation-modal-button {
@@ -289,7 +288,7 @@ img {
 }
 
 .find-accomodation-modal-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -540,11 +539,11 @@ img {
 }
 
 .advantages-item .advantages-item-title::after {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-item-full-width .advantages-item-title::after {
-  background: rgb(255 255 255 / 30%);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-description {
@@ -567,11 +566,11 @@ img {
 }
 
 .first-advantages-background-color {
-  background-color: rgb(131 179 211 / 12%);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .second-advantages-background-color {
-  background-color: rgb(131 179 211 / 20%);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 /* more-benefits */
@@ -660,7 +659,7 @@ img {
 }
 
 .first-benefits-background-color {
-  background-color: rgb(131 179 211 / 12%);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .more-benefits-item-accomodation .more-benefits-item-title::before {
@@ -860,15 +859,15 @@ img {
 
 .breadcrumbs-icon-home:hover,
 .breadcrumbs-icon-home:focus {
-  fill: rgb(255 255 255 / 60%);
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:hover {
-  color: rgb(255 255 255 / 60%);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1064,7 +1063,7 @@ img {
 .input-slider-total-range {
   width: 287px;
   height: 4px;
-  background-color: rgb(255 255 255 / 30%);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .input-slider-current-range {
@@ -1158,7 +1157,6 @@ img {
   left: 0;
   width: 24px;
   height: 24px;
-  /* padding: 14px 12px; */
   padding: 10px;
   background-image: url("../images/table-view.svg");
   background-repeat: no-repeat;
@@ -1186,7 +1184,6 @@ img {
   left: 0;
   width: 24px;
   height: 24px;
-  /* padding: 14px 12px; */
   padding: 10px;
   background-image: url("../images/full-view.svg");
   background-repeat: no-repeat;
@@ -1214,7 +1211,6 @@ img {
   left: 0;
   width: 24px;
   height: 24px;
-  /* padding: 14px 12px; */
   padding: 10px;
   background-image: url("../images/list-view.svg");
   background-repeat: no-repeat;
@@ -1290,8 +1286,8 @@ img {
 }
 
 .accomodation-select-list:disabled {
-  color: rgb(0 0 0 / 30%);
-  border: 2px solid rgb(0 0 0 / 30%);
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .accomodation-item {
@@ -1391,7 +1387,7 @@ img {
 }
 
 .accomodation-description-link:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .accomodation-rating-value {
@@ -1500,7 +1496,7 @@ img {
 }
 
 .pagination-item a:active {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item-divider {
@@ -1577,7 +1573,7 @@ img {
 }
 
 .footer-contacts-address-phone:active {
-  color: rgb(117 97 87 / 30%);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-social-list {
@@ -1654,7 +1650,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(242 242 242 / 80%);
+  background-color: rgba(242, 242, 242, 0.8);
   z-index: 999;
 }
 
@@ -1665,7 +1661,7 @@ img {
   transform: translate(-50%, -50%);
   border-radius: 30px;
   background: #ffffff;
-  box-shadow: 0 25px 50px 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   width: 717px;
   padding: 64px 70px;
   padding-top: 65px;
@@ -1724,7 +1720,7 @@ img {
 }
 
 .accomodation-search-request-item input:focus {
-  color: rgb(0 0 0 / 60%);
+  color: rgba(0, 0, 0, 0.6);
   outline: 3px solid #83b3d3;
   background: #e6e6e6;
 }
@@ -1830,7 +1826,7 @@ svg.quantity-counter-plus-icon {
 
 .quantity-counter-minus-button:focus,
 .quantity-counter-plus-button:focus {
-  color: rgb(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
