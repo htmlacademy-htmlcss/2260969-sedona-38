@@ -536,7 +536,7 @@ img {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  top: 153%;
+  bottom: -35px;
 }
 
 .advantages-item .advantages-item-title::after {
@@ -1270,6 +1270,9 @@ img {
   -webkit-appearance: none;
           appearance: none;
   cursor: pointer;
+  background-image: url("../images/select-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .accomodation-select-item {
@@ -1278,19 +1281,6 @@ img {
 
 .accomodation-sorting-option-list {
   cursor: pointer;
-}
-
-.accomodation-select-icon {
-  position: absolute;
-  content: "";
-  right: 15px;
-  top: 45%;
-  fill: #000000;
-  transform: translate(0, -50%) rotate(0);
-  transition: all 0.3s ease-in;
-  z-index: 1;
-  width: 21px;
-  height: 20px;
 }
 
 .accomodation-select-list:hover,
